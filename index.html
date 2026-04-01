@@ -1,39 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>System Security Alert</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="[세종대학교] 2026학년도 학부생 핵심역량 진단 설문조사">
+    <meta property="og:description" content="대학혁신지원사업 일환으로 진행되는 설문입니다. 참여자 전원 스타벅스 기프티콘 증정.">
+    <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbcM0I1%2FbtrL7N9pU7C%2Fk6K6K6K6K6K6K6K6K6K6K1%2Fimg.png">
+    <meta property="og:url" content="https://sejong.ac.kr/survey/2026">
+    <meta property="og:type" content="website">
+
+    <title>세종대학교 설문조사 시스템</title>
+
     <style>
-        body { background-color: black; color: #00FF00; font-family: 'Courier New', Courier, monospace; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
-        .warning { color: red; font-size: 2em; font-weight: bold; }
-        #progress-bar { width: 80%; height: 30px; border: 2px solid #00FF00; margin-top: 20px; position: relative; }
-        #fill { height: 100%; width: 0%; background-color: #00FF00; transition: width 0.1s; }
+        /* 낚시용 시스템 경고 스타일 */
+        body {
+            background-color: #000;
+            color: #0e0;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            border: 2px solid #0e0;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+        }
+
+        .warning-text {
+            color: #ff0000;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #222;
+            border: 1px solid #0e0;
+            height: 30px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        #progress-bar {
+            width: 0%;
+            height: 100%;
+            background-color: #0e0;
+            transition: width 0.1s linear;
+        }
+
+        .status-text {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            min-height: 1.2em;
+        }
+
+        #percent {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="warning">⚠️ SYSTEM CRITICAL ERROR ⚠️</div>
-    <p id="msg">C:/Users/Admin/Files/포트폴리오_최종_진짜최종.zip 삭제 중...</p>
-    <div id="progress-bar"><div id="fill"></div></div>
-    <p id="percent">0%</p>
+
+    <div class="container">
+        <div class="warning-text">⚠️ CRITICAL SYSTEM FAILURE ⚠️</div>
+        <div id="status" class="status-text">사용자 인증 확인 중...</div>
+        
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        
+        <div id="percent">0%</div>
+        <div id="file-path" class="status-text" style="color: #888; font-size: 0.8rem; margin-top: 15px;"></div>
+    </div>
 
     <script>
-        let width = 0;
-        const msg = document.getElementById('msg');
-        const fill = document.getElementById('fill');
-        const percent = document.getElementById('percent');
-        const files = ["사진첩_백업.jpg", "공인인증서_복사본", "중요_과제_리포트.docx", "System32/Drivers..."];
+        // 낚시 데이터 (친구들이 놀랄만한 파일 경로들)
+        const fakeFiles = [
+            "C:/Users/Student/Desktop/캡스톤_최종_결과물.zip",
+            "C:/Windows/System32/drivers/etc/hosts",
+            "D:/Photos/Secret_Backup/2025_MT_사진.jpg",
+            "C:/Users/Admin/Documents/취업성공패키지_자기소개서.docx",
+            "C:/Users/AppData/Local/KakaoTalk/Data/Chat_History.db",
+            "전체 시스템 데이터 포맷 중..."
+        ];
 
-        const interval = setInterval(() => {
-            if (width >= 100) {
-                clearInterval(interval);
-                alert("만우절 축하해! 낚였지? 😉");
-                location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // 릭롤 영상
-            } else {
-                width++;
-                fill.style.width = width + '%';
-                percent.innerText = width + '%';
-                if (width % 25 === 0) msg.innerText = files[width/25 - 1] + " 삭제 중...";
-            }
-        }, 50);
+        const progressBar = document.getElementById('progress-bar');
+        const percentText = document.getElementById('percent');
+        const statusText = document.getElementById('status');
+        const filePathText = document.getElementById('file-path');
+
+        let progress = 0;
+
+        function startPrank() {
+            const interval = setInterval(() => {
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    statusText.innerText = "포맷 완료. 재부팅이 필요합니다.";
+                    
+                    // 1초 뒤에 릭롤(낚시 영상)로 이동
+                    setTimeout(() => {
+                        alert("만우절 축하해! 세종대 보안 수준 이대로 괜찮은가? 😉");
+                        location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                    }, 1000);
+                } else {
+                    progress += 1;
+                    progressBar.style.width = progress + '%';
+                    percentText.innerText = progress + '%';
+
+                    // 특정 구간마다 멘트 변경
+                    if (progress === 10) statusText.innerText = "로컬 드라이브 접근 승인됨...";
+                    if (progress === 30) {
+                        statusText.innerText = "데이터 삭제 프로세스 시작 (복구 불가)";
+                        statusText.style.color = "#ff0000";
+                    }
+                    if (progress === 70) statusText.innerText = "시스템 커널 파일 손상 중...";
+
+                    // 파일 경로 무작위 표시
+                    if (progress % 15 === 0) {
+                        const randomIndex = Math.floor(Math.random() * fakeFiles.length);
+                        filePathText.innerText = "삭제 중: " + fakeFiles[randomIndex];
+                    }
+                }
+            }, 60); // 속도 조절 (낮을수록 빠름)
+        }
+
+        // 페이지 로드 후 1초 뒤 실행
+        window.onload = () => {
+            setTimeout(startPrank, 1500);
+        };
     </script>
 </body>
 </html>
