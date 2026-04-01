@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Security Alert</title>
+    <style>
+        body { background-color: black; color: #00FF00; font-family: 'Courier New', Courier, monospace; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+        .warning { color: red; font-size: 2em; font-weight: bold; }
+        #progress-bar { width: 80%; height: 30px; border: 2px solid #00FF00; margin-top: 20px; position: relative; }
+        #fill { height: 100%; width: 0%; background-color: #00FF00; transition: width 0.1s; }
+    </style>
+</head>
+<body>
+    <div class="warning">⚠️ SYSTEM CRITICAL ERROR ⚠️</div>
+    <p id="msg">C:/Users/Admin/Files/포트폴리오_최종_진짜최종.zip 삭제 중...</p>
+    <div id="progress-bar"><div id="fill"></div></div>
+    <p id="percent">0%</p>
+
+    <script>
+        let width = 0;
+        const msg = document.getElementById('msg');
+        const fill = document.getElementById('fill');
+        const percent = document.getElementById('percent');
+        const files = ["사진첩_백업.jpg", "공인인증서_복사본", "중요_과제_리포트.docx", "System32/Drivers..."];
+
+        const interval = setInterval(() => {
+            if (width >= 100) {
+                clearInterval(interval);
+                alert("만우절 축하해! 낚였지? 😉");
+                location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // 릭롤 영상
+            } else {
+                width++;
+                fill.style.width = width + '%';
+                percent.innerText = width + '%';
+                if (width % 25 === 0) msg.innerText = files[width/25 - 1] + " 삭제 중...";
+            }
+        }, 50);
+    </script>
+</body>
+</html>
