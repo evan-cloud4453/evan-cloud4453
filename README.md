@@ -1,4 +1,4 @@
-<h1 align="center"># Welcome to my lab notebook 👋</h1>
+<h1 align="center"> Welcome to my lab notebook 👋</h1>
 
 <p align="center">Multimodal ML that runs on a webcam and a microphone — no lab rig required.</p>
 
