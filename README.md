@@ -32,7 +32,7 @@ I am an AI undergraduate at **Sejong University**, Department of Artificial Inte
 파이프라인은 화면 캡처(OpenCV·MediaPipe)와 음성(faster-whisper·webrtcvad)을 함께 받아 Amazon Bedrock의 Claude로 내레이션을 생성하고, Electron 앱이 이를 실시간 패널에 쌓습니다.
 
 </details>
----
+
 #### Stack
 
 | Area | Tools |
