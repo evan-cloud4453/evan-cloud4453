@@ -1,59 +1,58 @@
-### Gio Kim · 김지오
+<h1 align="center">Hi there, I'm Gio 👋</h1>
 
-AI undergraduate at **Sejong University**, Department of Artificial Intelligence (3rd year). I build multimodal ML systems that run on commodity hardware — a webcam and a microphone rather than dedicated eye-tracking or lab equipment — and I care more about whether an evaluation protocol can be trusted than about the headline metric it produces.
+<p align="center">Multimodal ML that runs on a webcam and a microphone — no lab rig required.</p>
 
-- **Now** — `SEE-ON`, a multi-agent layer that narrates live video meetings for blind participants (LangGraph orchestration, WebRTC media control, NVDA add-on). Team lead, AI Rookie finals.
-- **Recently** — `LEAM`, a concentration-assessment system that spends its first three minutes learning where a given user actually looks, then scores against that baseline instead of a fixed "is the user facing the screen" threshold.
-- **Working on** — personalization under distribution shift, evaluation protocols that survive a small sample, and the cases where a low-dimensional physical feature set outperforms an image encoder.
+<p align="center">
+  <img alt="Sejong University" src="https://img.shields.io/badge/Sejong%20University-Dept.%20of%20AI-1f2937?style=flat-square">
+  <img alt="Class of 2027" src="https://img.shields.io/badge/Graduating-Feb%202027%20·%20early-2563eb?style=flat-square">
+  <img alt="Location" src="https://img.shields.io/badge/Seoul-KR-0d9488?style=flat-square">
+  <a href="https://github.com/evan-cloud4453?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/evan-cloud4453?style=flat-square&logo=github&label=Followers&color=7c3aed"></a>
+</p>
 
-#### Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) ![Ultralytics](https://img.shields.io/badge/YOLOv8-0B0B0B?style=flat-square&logo=ultralytics&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=mediapipe&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
-
-#### Selected work
-
-| Project | What it does | Stack |
-|---|---|---|
-| **[LEAM](https://github.com/evan-cloud4453/26-1DL_LEAM-Project)** | Calibrates to a user's gaze zones and ambient noise floor for three minutes, then applies a four-stage hierarchical check so that reading a book and dozing off are not scored the same way | PyTorch · L2CS-Net · YOLOv8n · PANNs · FastAPI |
-| **[solar-wind-project-2026](https://github.com/evan-cloud4453/solar-wind-project-2026)** | Forecasts Earth-arriving solar wind speed at twelve horizons from SDO/AIA disk imagery. The strongest submission removes the CNN branch entirely in favour of ballistically aligned coronal-hole features | PyTorch · GRU · Jupyter |
-| **[generative-ai-quiz](https://github.com/evan-cloud4453/generative-ai-quiz)** | Quiz trainer with a wrong-answer queue that maintains itself: missed items return for review and leave the queue once answered correctly. 215 items, single file, no build step | Vanilla JS · GitHub Pages |
-| **[engQuiz](https://github.com/evan-cloud4453/engQuiz)** | TOEIC vocabulary CBT with live invigilation — the instructor watches progress and submissions over a websocket channel while the exam runs | Node.js · Socket.IO · MongoDB |
-| **[sound-quiz-show](https://github.com/evan-cloud4453/sound-quiz-show)** | Real-time multiplayer game where players race to identify an audio clip, backed by an augmented sound-clip dataset | JavaScript · Python |
-| **[coc-shortage-tracker](https://github.com/evan-cloud4453/coc-shortage-tracker)** | Automates a U.S. Army change-of-command property inventory through the GUI layer alone, on a terminal where no API or database access was permitted | VBA · Win32 API · Power Query |
-
-<sub>All repositories → <a href="https://github.com/evan-cloud4453?tab=repositories">github.com/evan-cloud4453?tab=repositories</a></sub>
-
-#### Activity
-
-<a href="https://github.com/evan-cloud4453">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=evan-cloud4453&theme=github_dark">
-    <img width="100%" alt="Contribution activity" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=evan-cloud4453&theme=github_light">
-  </picture>
-</a>
+I am an AI undergraduate at **Sejong University**, Department of Artificial Intelligence, graduating early in February 2027. I build multimodal systems that assume ordinary hardware — a webcam and a microphone rather than dedicated eye-tracking or lab equipment — and I care more about whether an evaluation protocol can be trusted than about the headline metric it produces. Current interests: personalization under distribution shift, evaluation designs that survive a small sample, and the cases where a low-dimensional physical feature set outperforms an image encoder.
 
 <details>
 <summary><b>한국어 소개</b></summary>
 
 <br>
 
-세종대학교 인공지능학과 3학년 김지오입니다. 웹캠과 마이크처럼 누구나 가진 장비만으로 동작하는 멀티모달 ML 시스템을 만듭니다. 성능 수치 자체보다, 그 수치를 만들어낸 평가 방법을 신뢰할 수 있는지를 먼저 확인하는 편입니다.
+세종대학교 인공지능학과 재학 중이며 2027년 2월 조기졸업 예정입니다. 웹캠과 마이크처럼 누구나 가진 장비만으로 동작하는 멀티모달 시스템을 만듭니다. 성능 수치 자체보다, 그 수치를 만들어낸 평가 방법을 신뢰할 수 있는지를 먼저 확인하는 편입니다. 관심 분야는 분포 변화 하에서의 개인화, 표본이 작을 때도 무너지지 않는 평가 설계, 이미지 인코더보다 저차원 물리 피처가 앞서는 조건입니다.
 
-- **진행 중** — `SEE-ON`. 시각장애인 참여자를 위해 실시간 화상회의 상황을 서술하는 멀티 에이전트 시스템입니다. LangGraph 오케스트레이션, WebRTC 미디어 제어, NVDA 애드온으로 구성했고 팀장을 맡았습니다. AI Rookie 본선 진출작입니다.
-- **최근** — `LEAM`. 세션 시작 후 3분간 사용자가 실제로 어디를 보는지 학습한 뒤, 그 개인 기준선에 대해 집중도를 평가합니다. "정면을 응시하는가"라는 고정 임계값을 쓰지 않기 때문에 독서대나 필기 환경에서도 오판이 줄어듭니다.
-- **관심 분야** — 분포 변화 하에서의 개인화, 표본이 작을 때도 무너지지 않는 평가 설계, 이미지 인코더보다 저차원 물리 피처가 앞서는 조건.
+**진행 중 — SEE-ON (視溫)**
 
-**주요 프로젝트**
+발표자가 **말하지 않은 시각 정보**를 화면 해설 내레이션으로 만들어 회의 흐름을 끊지 않는 지점에 넣는 멀티 에이전트 시스템입니다. AI Rookie 본선 진출작이며 팀장을 맡고 있습니다.
 
-| 프로젝트 | 내용 | 스택 |
-|---|---|---|
-| **[LEAM](https://github.com/evan-cloud4453/26-1DL_LEAM-Project)** | 응시 밀도로 학습 Zone을, 환경음으로 기준 dB를 먼저 학습한 뒤 4단계 계층 판단으로 방해 요인을 순차 검증 | PyTorch · L2CS-Net · YOLOv8n · PANNs · FastAPI |
-| **[solar-wind-project-2026](https://github.com/evan-cloud4453/solar-wind-project-2026)** | SDO/AIA 태양 원반 영상으로 12개 horizon의 지구 도달 태양풍 속도를 예측. 최고 제출은 CNN 분기를 제거하고 탄도 정렬된 코로나홀 피처만 사용한 모델 | PyTorch · GRU · Jupyter |
-| **[generative-ai-quiz](https://github.com/evan-cloud4453/generative-ai-quiz)** | 틀린 문제가 자동으로 복습 큐에 들어가고 다시 맞히면 빠지는 오답 노트. 215문항, 단일 파일, 빌드 없음 | Vanilla JS · GitHub Pages |
-| **[engQuiz](https://github.com/evan-cloud4453/engQuiz)** | 시험이 진행되는 동안 교사가 웹소켓으로 응시 상황과 제출을 실시간 감독하는 TOEIC 어휘 CBT | Node.js · Socket.IO · MongoDB |
-| **[sound-quiz-show](https://github.com/evan-cloud4453/sound-quiz-show)** | 들려준 소리의 정체를 먼저 맞히는 실시간 멀티플레이 게임. 증강한 사운드 클립 데이터셋 기반 | JavaScript · Python |
-| **[coc-shortage-tracker](https://github.com/evan-cloud4453/coc-shortage-tracker)** | API·DB 접근이 허용되지 않는 단말에서 GUI 계층만으로 미 육군 지휘관 이취임 재물조사를 자동화 | VBA · Win32 API · Power Query |
+문제를 "화면 읽어주기"가 아니라 **"발화가 남긴 공백 보완"** 으로 정의했습니다. 공백을 5개 유형으로 나누고 유형별 전담 에이전트가 해당 지점에서만 내레이션을 생성합니다. 당사자 설문 24명·심층 인터뷰 11명에서 최대 불편으로 지목된 것이 내레이션과 회의 음성의 겹침이었기 때문에, **무엇을 말할지**만큼 **언제 말하지 않을지**를 같은 비중으로 다룹니다.
+
+| 저장소 | 역할 |
+|---|---|
+| [seeon-meet](https://github.com/See-on26/seeon-meet) | 온라인 회의 빌드 — Google Meet 회의에서 화면과 오디오를 함께 취득 |
+| [electron-seeon-experiment](https://github.com/See-on26/electron-seeon-experiment) | 실험실 빌드 — 녹화 영상을 1배속으로 재생해 실회의와 동일한 내레이션 체인에 투입 |
+
+파이프라인은 화면 캡처(OpenCV·MediaPipe)와 음성(faster-whisper·webrtcvad)을 함께 받아 Amazon Bedrock의 Claude로 내레이션을 생성하고, Electron 앱이 이를 실시간 패널에 쌓습니다.
 
 </details>
+
+#### Stack
+
+| Area | Tools |
+|---|---|
+| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| **ML / DL** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white) |
+| **Vision / Audio** | ![Ultralytics](https://img.shields.io/badge/YOLOv8-0B0B0B?style=flat-square&logo=ultralytics&logoColor=white) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=mediapipe&logoColor=white) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) |
+| **LLM / Speech** | ![Amazon Bedrock](https://img.shields.io/badge/Amazon%20Bedrock-232F3E?style=flat-square) ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=claude&logoColor=white) ![Whisper](https://img.shields.io/badge/faster--whisper-4B5563?style=flat-square) ![WebRTC VAD](https://img.shields.io/badge/webrtcvad-333333?style=flat-square&logo=webrtc&logoColor=white) |
+| **Backend** | ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) |
+| **Desktop / Infra** | ![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white) ![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) |
+
+#### Currently building
+
+**[SEE-ON](https://github.com/See-on26)** (視溫) — a multi-agent system that narrates the visual information a speaker leaves unsaid during a live video meeting. Team lead, AI Rookie finals.
+
+The problem is framed as gap-filling rather than screen-reading. A presenter omits what the screen already shows, so a listener on the audio channel alone receives half the message. SEE-ON defines that missing half as five gap types and assigns a dedicated agent to each, generating narration only at those points. Because the loudest complaint in our user research (24 survey responses, 11 in-depth interviews) was narration colliding with meeting audio, *when not to speak* is treated as equal in weight to *what to say*.
+
+| Repository | Role |
+|---|---|
+| **[seeon-meet](https://github.com/See-on26/seeon-meet)** | Live build — captures screen and audio from a Google Meet session |
+| **[electron-seeon-experiment](https://github.com/See-on26/electron-seeon-experiment)** | Lab build — replays recordings at 1× through the same narration chain |
+
+The pipeline pairs screen capture (OpenCV, MediaPipe) with speech (faster-whisper, webrtcvad), generates narration through Claude on Amazon Bedrock, and streams it into an Electron panel beside the meeting.
