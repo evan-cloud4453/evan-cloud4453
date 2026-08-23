@@ -1,6 +1,6 @@
 <h1 align="center"> Welcome to my lab notebook 👋</h1>
 
-Building ML systems end to end: perception models, forecasting pipelines, and the real-time applications that have to run them.
+Building AI systems end to end: perception models, forecasting pipelines, and the real-time applications that have to run them.
 
 ![Sejong University](https://img.shields.io/badge/Sejong%20University-Dept.%20of%20AI-1f2937?style=flat-square) ![Graduating](https://img.shields.io/badge/Graduating-Feb%202027%20·%20early-2563eb?style=flat-square) ![Location](https://img.shields.io/badge/Seoul-KR-0d9488?style=flat-square) [![Followers](https://img.shields.io/github/followers/evan-cloud4453?style=flat-square&logo=github&label=Followers&color=7c3aed)](https://github.com/evan-cloud4453?tab=followers)
 
